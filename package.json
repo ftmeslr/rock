@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "rock-academy",
   "private": true,
   "scripts": {
     "build": "turbo run build",
