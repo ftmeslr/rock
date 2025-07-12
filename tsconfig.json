@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",               
+    "paths": {
+      "@rock/ui": ["packages/ui/src"],
+      "@rock/types": ["packages/types/src"]
+        },
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "jsx": "react-jsx"
+  }
+}
