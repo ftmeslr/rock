@@ -1,11 +1,14 @@
 import type { NextConfig } from "next";
-const withTM = require('next-transpile-modules')(['ui']); // 👈 IMPORTANT: match your package name
+const withTM = require('next-transpile-modules')(['ui']); 
+const { i18n } = require('./next-i18next.config');
 
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
     swcMinify: true,
-  transpilePackages: ['ui'], // 👈 safe fallback if you're on Next 13+
+  transpilePackages: ['ui'], 
+  i18n, // ✅ Add this line
+
 };
 
 module.exports = withTM(nextConfig);
